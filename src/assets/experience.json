@@ -1,0 +1,186 @@
+{
+  "experience": [
+    {
+      "id": "1",
+      "title": "Tactical Purchaser",
+      "company": "Siemens AB - SCM Nordics",
+      "location": "Stockholm",
+      "modal": {
+        "title": "Tactical Purchaser",
+        "company": "Siemens AB - Central Functions",
+        "years": "2016-2024",
+        "responsibilities": [
+          "Focus on improving processes, contracts, supplier relations, and customer satisfaction",
+          "Personal protection equipment",
+          "Tools and components",
+          "Calibration services",
+          "Office supplies",
+          "Merchandising products",
+          "Recycling",
+          "Print and digital products",
+          "Archiving"
+        ]
+      },
+      "imgSrc": "../src/assets/siemens_logo.png"
+    },
+    {
+      "id": "2",
+      "title": "Sales Support",
+      "company": "Siemens AB - Digital Industries",
+      "location": "Stockholm",
+      "modal": {
+        "title": "Sales Support",
+        "company": "Siemens AB - Central Functions",
+        "years": "2014-2016",
+        "responsibilities": [
+          "Quotes of varying size for big and small businesses in the industry sector",
+          "Technical support and other questions regarding Siemens product portfolio",
+          "Responsible for adding and maintaining customer data in the customer database",
+          "Purchasing of indirect materials to the sales team in Sweden"
+        ]
+      },
+      "imgSrc": "../src/assets/siemens_logo.png"
+    },
+    {
+      "id": "3",
+      "title": "Sales Support",
+      "company": "Siemens AB - Digital Industries",
+      "location": "Stockholm",
+      "modal": {
+        "title": "Sales Support",
+        "company": "Siemens AB - Central Functions",
+        "years": "2014-2016",
+        "responsibilities": [
+          "Quotes of varying size for big and small businesses in the industry sector",
+          "Technical support and other questions regarding Siemens product portfolio",
+          "Responsible for adding and maintaining customer data in the customer database",
+          "Purchasing of indirect materials to the sales team in Sweden"
+        ]
+      },
+      "imgSrc": "../src/assets/siemens_logo.png"
+    },
+    {
+      "id": "4",
+      "title": "Sales Assistant",
+      "company": "Siemens AB - Digital Industries",
+      "location": "Stockholm",
+      "modal": {
+        "title": "Sales Assistant",
+        "company": "Siemens AB - Digital Industries",
+        "years": "2014",
+        "responsibilities": [
+          "Assistant to Regional Sales Manager and the entire sales team at Digital Industries division in Sweden",
+          "Responsible for adding and maintaining customer data in the customer database",
+          "Planning and booking of team events",
+          "Purchasing of indirect materials to the sales team in Sweden"
+        ]
+      },
+      "imgSrc": "../src/assets/siemens_logo.png"
+    },
+    {
+      "id": "5",
+      "title": "Purchasing assistant",
+      "company": "Inet AB - SCM",
+      "location": "Gothenburg",
+      "modal": {
+        "title": "Purchasing assistant",
+        "company": "Inet AB - SCM",
+        "years": "2012-2013",
+        "responsibilities": [
+          "Assistant to all purchasers",
+          "Verification and ordering of custom-made computers",
+          "Ordering of special products",
+          "Adding new products to the company's database using Scala ERP"
+        ]
+      },
+      "imgSrc": "../src/assets/inet.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Internship",
+      "company": "Inet AB - SCM",
+      "location": "Gothenburg",
+      "modal": {
+        "title": "Internship",
+        "company": "Inet AB - SCM",
+        "years": "2012",
+        "responsibilities": [
+          "Ordering of special products",
+          "Allocation of products to different stores",
+          "Adding new products to the company's database using Scala ERP"
+        ]
+      },
+      "imgSrc": "../src/assets/inet.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Internship",
+      "company": "B/S/H/ AB - Planning and Distribution",
+      "location": "Solna",
+      "modal": {
+        "title": "Internship",
+        "company": "Bosch Siemens Home Appliances",
+        "years": "2011-2012",
+        "responsibilities": [
+          "Responsible for the Gaggenau brand",
+          "Work in SAP",
+          "Daily contact with colleagues in Europe to allocate products to different storage sites"
+        ]
+      },
+      "imgSrc": "../src/assets/boschsiemens.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Internship",
+      "company": "InternChina",
+      "location": "Qingdao, China",
+      "modal": {
+        "title": "Internship",
+        "company": "Intern National Business Exchange",
+        "years": "2010",
+        "responsibilities": [
+          "Re-design of company homepage",
+          "Content management",
+          "Sales pitch by email",
+          "Re-organization of company database of major Swedish customers",
+          "Compilation of letters to introduce the company to new potential partners in Sweden",
+          "The company is now known as: Pagoda Projects"
+        ]
+      },
+      "imgSrc": "../src/assets/internchina.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Service Consultant",
+      "company": "Candy King",
+      "location": "Stockholm",
+      "modal": {
+        "title": "Service Consultant",
+        "company": "Candy King",
+        "years": "2007",
+        "responsibilities": [
+          "Ordering of candy to supermarkets",
+          "Responsible for maintenance of candy sections in several supermarkets in the Stockholm Area"
+        ]
+      },
+      "imgSrc": "../src/assets/candyking.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Airport Attendant",
+      "company": "Civil Aviation Administration",
+      "location": "Stockholm Arlanda Airport",
+      "modal": {
+        "title": "Airport Attendant",
+        "company": "Civil Aviation Administration",
+        "years": "2006-2007",
+        "responsibilities": [
+          "Informant in the terminals during the initiation of new regulations: limitation of liquids in hand luggage",
+          "Assisting passengers with re-packing of luggage and checking-in",
+          "Organizing security check queues"
+        ]
+      },
+      "imgSrc": "../src/assets/lfv.jpg"
+    }
+  ]
+}

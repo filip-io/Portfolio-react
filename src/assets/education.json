@@ -1,0 +1,65 @@
+{
+    "education": [
+        {
+            "id": "1",
+            "title": "Full-Stack .NET Developer",
+            "institution": "Chas Academy",
+            "location": "Stockholm",
+            "modal": {
+                "title": "Full-Stack .NET Developer",
+                "institution": "Chas Academy",
+                "years": "2023-2025",
+                "description": "Comprehensive .NET training program encompassing everything from frontend development with JavaScript and major JavaScript frameworks to backend application development and database management",
+                "highlights": [
+                    "Expertise across the full spectrum of web development",
+                    "Internship to obtain practical working experience"
+                ]
+            },
+            "imgSrc": "../src/assets/chas.jpg"
+        },
+        {
+            "id": "2",
+            "title": "International purchaser",
+            "institution": "Stockholm International Business School",
+            "location": "Stockholm",
+            "modal": {
+                "title": "International purchaser",
+                "institution": "Stockholm International Business School",
+                "years": "2010-2012",
+                "description": "Focus on practical competence in purchasing",
+                "highlights": [
+                    "Internships to obtain practical working experience"
+                ]
+            },
+            "imgSrc": "../src/assets/sih.png"
+        },
+        {
+            "id": "3",
+            "title": "Business Chinese",
+            "institution": "Dalarna University",
+            "location": "Falun",
+            "modal": {
+                "title": "Business Chinese",
+                "institution": "Dalarna University",
+                "years": "2009",
+                "description": "Chinese studies with business focus",
+                "highlights": []
+            },
+            "imgSrc": "../src/assets/dalarna.jpg"
+        },
+        {
+            "id": "4",
+            "title": "Chinese",
+            "institution": "Stockholm University",
+            "location": "Stockholm",
+            "modal": {
+                "title": "Chinese",
+                "institution": "Stockholm University",
+                "years": "2007-2008",
+                "description": "Chinese studies",
+                "highlights": []
+            },
+            "imgSrc": "../src/assets/su.jpg"
+        }
+    ]
+}
