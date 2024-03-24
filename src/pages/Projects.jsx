@@ -1,6 +1,11 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import ProjectsData from '../assets/projects.json';
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import ProjectsData from '../assets/projects.json'
+import audialAtlasLogo from '../assets/audial_atlas_logo.jpg'
+import apiLogo from '../assets/api.jpg'
+import bankLogo from '../assets/bank.jfif'
+import siemensLogo from '../assets/siemens.jpg'
+import gitHubLogo from '../assets/git.jpg'
 
 export default function Projects() {
     const [loading, setLoading] = useState(false);
@@ -16,7 +21,7 @@ export default function Projects() {
             }
             const data = await response.json();
             setRepositories(data);
-            setErrorMessage(''); // Reset error message on successful fetch
+            setErrorMessage('');
         } catch (error) {
             console.error('Error fetching repositories:', error);
             setErrorMessage('Failed to load repositories. Please try again later.');
@@ -24,7 +29,7 @@ export default function Projects() {
         setLoading(false);
     };
 
-    const excludedRepoNames = ['AudialAtlasService', 'Mini_project-API', 'BankNyBank'];
+    const excludedRepoNames = ['AudialAtlasService', 'Mini_project-API', 'BankNyBank', 'Portfolio-react'];
 
     const filteredRepositories = repositories.filter(repo => !excludedRepoNames.includes(repo.name));
     const sortedRepositories = filteredRepositories.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
@@ -40,7 +45,10 @@ export default function Projects() {
                 {ProjectsData.Projects.map((proj, index) => (
                     <div className="project-container-left" key={proj.title}>
                         <div className="projects-img-wrapper">
-                            <img src={proj.imgLink} alt={`${proj.title} logo`} />
+                            {proj.imgSrc === 'audialAtlasLogo' && <img src={audialAtlasLogo} alt={`${proj.title} logo`} />}
+                            {proj.imgSrc === 'apiLogo' && <img src={apiLogo} alt={`${proj.title} logo`} />}
+                            {proj.imgSrc === 'bankLogo' && <img src={bankLogo} alt={`${proj.title} logo`} />}
+                            {proj.imgSrc === 'siemensLogo' && <img src={siemensLogo} alt={`${proj.title} logo`} />}
                         </div>
                         <div className="project-description">
                             <h3>{proj.title}</h3>
@@ -76,7 +84,7 @@ export default function Projects() {
                 {sortedRepositories.map((repo) => (
                     <div className="project-container-left" key={repo.id}>
                         <div className="projects-img-wrapper">
-                            <img src="../src/assets/git.jpg" alt="Repository logo" />
+                            <img src={gitHubLogo} alt="GitHub logo" />
                         </div>
                         <div className="project-description">
                             <h3>{repo.name}</h3>

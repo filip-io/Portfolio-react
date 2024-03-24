@@ -15,7 +15,7 @@
                     "Internship to obtain practical working experience"
                 ]
             },
-            "imgSrc": "../src/assets/chas.jpg"
+            "imgSrc": "chasLogo"
         },
         {
             "id": "2",
@@ -31,7 +31,7 @@
                     "Internships to obtain practical working experience"
                 ]
             },
-            "imgSrc": "../src/assets/sih.png"
+            "imgSrc": "sihLogo"
         },
         {
             "id": "3",
@@ -45,7 +45,7 @@
                 "description": "Chinese studies with business focus",
                 "highlights": []
             },
-            "imgSrc": "../src/assets/dalarna.jpg"
+            "imgSrc": "dalarnaLogo"
         },
         {
             "id": "4",
@@ -59,7 +59,7 @@
                 "description": "Chinese studies",
                 "highlights": []
             },
-            "imgSrc": "../src/assets/su.jpg"
+            "imgSrc": "suLogo"
         }
     ]
 }

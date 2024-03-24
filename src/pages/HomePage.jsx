@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import filipPic from '../assets/filip.jpg'
+import dennisPic from '../assets/dennis.gif'
 
 export const HomePage = () => {
   const [typedCharacters, setTypedCharacters] = useState('');
@@ -13,7 +15,7 @@ export const HomePage = () => {
       if (typedCharacters === magicKeyword) {
         const modal = document.getElementById('dennis');
         modal.style.display = 'block';
-        setTypedCharacters(''); // Reset typedCharacters here
+        setTypedCharacters('');
       } else if (!magicKeyword.startsWith(typedCharacters)) {
         setTypedCharacters('');
       }
@@ -62,7 +64,7 @@ export const HomePage = () => {
             <h2>Full-Stack .NET Student</h2>
           </div>
           <div className="home-main-container-right-box">
-            <img src="../src/assets/filip.jpg" alt="Picture of Filip" id="filip" className="filip-home-pic" onClick={toggleBackground} />
+            <img src={filipPic} alt="Picture of Filip" id="filip" className="filip-home-pic" onClick={toggleBackground} />
           </div>
         </div>
         <article className="home-intro-container">
@@ -90,52 +92,9 @@ export const HomePage = () => {
       <div id="dennis" className="modal">
         <div className="modal-content">
           <a href="#" className="modal-close">&times;</a>
-          <img src="../src/assets/dennis.gif" alt="Dennis saying 'Ah ah ah, you didn't say the magic word'" />
+          <img src={dennisPic} alt="Dennis saying 'Ah ah ah, you didn't say the magic word'" />
         </div>
       </div>
     </>
   );
 };
-
-
-/* export default function HomePage() {
-    return (
-        <>
-            <main className="home-main-container">
-                <div className="home-main-title-container">
-                    <div className="home-main-container-left-box">
-                        <h1>Hi, I'm Filip Nilsson</h1>
-                        <h2>Full-Stack .NET Student</h2>
-                    </div>
-                    <div className="home-main-container-right-box">
-                        <img src="../src/assets/filip.jpg" alt="Picture of Filip" id="filip" className="filip-home-pic" />
-                    </div>
-                </div>
-                <article className="home-intro-container">
-                    <div>
-                        <h3>A Few Tidbits About Me:</h3>
-                    </div>
-                    <div className="home-intro-box">
-                        <div className="h4-container">
-                            <div><i className="fa-solid fa-keyboard fa-2xl"></i>
-                                <h4>Web Developer <br />(to be)</h4>
-                            </div>
-                            <div><i className="fa-solid fa-face-grin-beam fa-2xl"></i>
-                                <h4>UX Enthusiast</h4>
-                            </div>
-                            <div><i className="fa-sharp fa-solid fa-music fa-2xl"></i>
-                                <h4>HiFi Nerd</h4>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <div id="dennis" className="modal">
-                    <div className="modal-content">
-                        <a href="#" className="modal-close">&times;</a>
-                        <img src="./img/dennis.gif" alt="Dennis saying 'Ah ah ah, you didn't say the magic word'" />
-                    </div>
-                </div>
-            </main>
-        </>
-    );
-} */

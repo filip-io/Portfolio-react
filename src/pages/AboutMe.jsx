@@ -1,3 +1,4 @@
+import filipAboutPic from '../assets/filip-about.jpg'
 
 export default function AboutMe() {
     return (
@@ -5,7 +6,7 @@ export default function AboutMe() {
             <article className="about-me-container">
                 <div className="about-me-container-box">
                     <div className="about-me-container-left-box">
-                        <img src="../src/assets/filip-about.jpg" alt="Picture of Filip" className="filip-about-pic" />
+                        <img src={filipAboutPic} alt="Picture of Filip" className="filip-about-pic" /> {/* Use the imported image */}
                     </div>
 
                     <div className="about-me-container-right-box">

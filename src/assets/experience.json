@@ -21,7 +21,7 @@
           "Archiving"
         ]
       },
-      "imgSrc": "../src/assets/siemens_logo.png"
+      "imgSrc": "siemensLogo"
     },
     {
       "id": "2",
@@ -39,7 +39,7 @@
           "Purchasing of indirect materials to the sales team in Sweden"
         ]
       },
-      "imgSrc": "../src/assets/siemens_logo.png"
+      "imgSrc": "siemensLogo"
     },
     {
       "id": "3",
@@ -57,7 +57,7 @@
           "Purchasing of indirect materials to the sales team in Sweden"
         ]
       },
-      "imgSrc": "../src/assets/siemens_logo.png"
+      "imgSrc": "siemensLogo"
     },
     {
       "id": "4",
@@ -75,7 +75,7 @@
           "Purchasing of indirect materials to the sales team in Sweden"
         ]
       },
-      "imgSrc": "../src/assets/siemens_logo.png"
+      "imgSrc": "siemensLogo"
     },
     {
       "id": "5",
@@ -93,7 +93,7 @@
           "Adding new products to the company's database using Scala ERP"
         ]
       },
-      "imgSrc": "../src/assets/inet.jpg"
+      "imgSrc": "inetLogo"
     },
     {
       "id": "6",
@@ -110,7 +110,7 @@
           "Adding new products to the company's database using Scala ERP"
         ]
       },
-      "imgSrc": "../src/assets/inet.jpg"
+      "imgSrc": "inetLogo"
     },
     {
       "id": "7",
@@ -127,7 +127,7 @@
           "Daily contact with colleagues in Europe to allocate products to different storage sites"
         ]
       },
-      "imgSrc": "../src/assets/boschsiemens.jpg"
+      "imgSrc": "boschSiemensLogo"
     },
     {
       "id": "8",
@@ -147,7 +147,7 @@
           "The company is now known as: Pagoda Projects"
         ]
       },
-      "imgSrc": "../src/assets/internchina.jpg"
+      "imgSrc": "internChinaLogo"
     },
     {
       "id": "9",
@@ -163,7 +163,7 @@
           "Responsible for maintenance of candy sections in several supermarkets in the Stockholm Area"
         ]
       },
-      "imgSrc": "../src/assets/candyking.jpg"
+      "imgSrc": "candyKingLogo"
     },
     {
       "id": "10",
@@ -180,7 +180,7 @@
           "Organizing security check queues"
         ]
       },
-      "imgSrc": "../src/assets/lfv.jpg"
+      "imgSrc": "lfvLogo"
     }
   ]
 }

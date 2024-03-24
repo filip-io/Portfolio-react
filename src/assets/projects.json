@@ -10,7 +10,7 @@
                 "We followed the design of repository pattern, with focus on the concept of IoC. We have repositories that fetches data from the database, and sends it to our Handlers. Our Handlers then give an IResult based on result back to endpoint.",
                 "We use DTOs to send data via calls, and ViewModels to return limited designed data back."
             ],
-            "imgLink": "../src/assets/audial_atlas_logo.jpg",
+            "imgSrc": "audialAtlasLogo",
             "url": "https://github.com/filip-io/AudialAtlasService",
             "urlText": "AudialAtlasService"
         },
@@ -23,7 +23,7 @@
                 "This was my first API. It's built using ASP.NET Core with Minimal API, implementing RESTful architecture.",
                 "The API is managing viewing and storing people, their interests and corresponding links using HTTP verbs."
             ],
-            "imgLink": "../src/assets/api.jpg",
+            "imgSrc": "apiLogo",
             "url": "https://github.com/filip-io/Mini_project-API",
             "urlText": "Interests API"
         },
@@ -36,7 +36,7 @@
                 "BankNyBank (BankNewBank) is a console app built in C# that emulates a simple bank-app/ATM.",
                 "The program was a school group project."
             ],
-            "imgLink": "../src/assets/bank.jfif",
+            "imgSrc": "bankLogo",
             "url": "https://github.com/filip-io/BankNyBank",
             "urlText": "BankNyBank"
         },
@@ -49,7 +49,7 @@
                 "In a previous role at Siemens I managed the migration from an old wiki-based platform to Microsoft Sharepoint.",
                 "The project included collaboration with colleagues in the Siemens SCM (Supply Chain Management) Nordics team to be able to restructure the content and defining the layout."
             ],
-            "imgLink": "../src/assets/siemens.jpg",
+            "imgSrc": "siemensLogo",
             "url": "",
             "componentUrl": "/siemensgallery",
             "urlText": "Siemens SCM Sharepoint"
