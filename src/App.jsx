@@ -10,7 +10,7 @@ import Education from './pages/Education'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio-react">
       <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
