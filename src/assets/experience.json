@@ -43,24 +43,6 @@
     },
     {
       "id": "3",
-      "title": "Sales Support",
-      "company": "Siemens AB - Digital Industries",
-      "location": "Stockholm",
-      "modal": {
-        "title": "Sales Support",
-        "company": "Siemens AB - Central Functions",
-        "years": "2014-2016",
-        "responsibilities": [
-          "Quotes of varying size for big and small businesses in the industry sector",
-          "Technical support and other questions regarding Siemens product portfolio",
-          "Responsible for adding and maintaining customer data in the customer database",
-          "Purchasing of indirect materials to the sales team in Sweden"
-        ]
-      },
-      "imgSrc": "siemensLogo"
-    },
-    {
-      "id": "4",
       "title": "Sales Assistant",
       "company": "Siemens AB - Digital Industries",
       "location": "Stockholm",
@@ -78,7 +60,7 @@
       "imgSrc": "siemensLogo"
     },
     {
-      "id": "5",
+      "id": "4",
       "title": "Purchasing assistant",
       "company": "Inet AB - SCM",
       "location": "Gothenburg",
@@ -96,7 +78,7 @@
       "imgSrc": "inetLogo"
     },
     {
-      "id": "6",
+      "id": "5",
       "title": "Internship",
       "company": "Inet AB - SCM",
       "location": "Gothenburg",
@@ -113,7 +95,7 @@
       "imgSrc": "inetLogo"
     },
     {
-      "id": "7",
+      "id": "6",
       "title": "Internship",
       "company": "B/S/H/ AB - Planning and Distribution",
       "location": "Solna",
@@ -130,7 +112,7 @@
       "imgSrc": "boschSiemensLogo"
     },
     {
-      "id": "8",
+      "id": "7",
       "title": "Internship",
       "company": "InternChina",
       "location": "Qingdao, China",
@@ -150,7 +132,7 @@
       "imgSrc": "internChinaLogo"
     },
     {
-      "id": "9",
+      "id": "8",
       "title": "Service Consultant",
       "company": "Candy King",
       "location": "Stockholm",
@@ -166,7 +148,7 @@
       "imgSrc": "candyKingLogo"
     },
     {
-      "id": "10",
+      "id": "9",
       "title": "Airport Attendant",
       "company": "Civil Aviation Administration",
       "location": "Stockholm Arlanda Airport",

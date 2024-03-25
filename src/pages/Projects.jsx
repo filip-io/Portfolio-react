@@ -43,7 +43,7 @@ export default function Projects() {
             </header>
             <article className="projects-container">
                 {ProjectsData.Projects.map((proj, index) => (
-                    <div className="project-container-left" key={proj.title}>
+                    <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.title}>
                         <div className="projects-img-wrapper">
                             {proj.imgSrc === 'audialAtlasLogo' && <img src={audialAtlasLogo} alt={`${proj.title} logo`} />}
                             {proj.imgSrc === 'apiLogo' && <img src={apiLogo} alt={`${proj.title} logo`} />}
@@ -81,8 +81,8 @@ export default function Projects() {
                 {errorMessage && <p>{errorMessage}</p>}
             </article>
             <article className="projects-container">
-                {sortedRepositories.map((repo) => (
-                    <div className="project-container-left" key={repo.id}>
+                {sortedRepositories.map((repo, index) => (
+                    <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={repo.id}>
                         <div className="projects-img-wrapper">
                             <img src={gitHubLogo} alt="GitHub logo" />
                         </div>
