@@ -6,7 +6,7 @@ export default function AboutMe() {
             <article className="about-me-container">
                 <div className="about-me-container-box">
                     <div className="about-me-container-left-box">
-                        <img src={filipAboutPic} alt="Picture of Filip" className="filip-about-pic" /> {/* Use the imported image */}
+                        <img src={filipAboutPic} alt="Picture of Filip" className="filip-about-pic" />
                     </div>
 
                     <div className="about-me-container-right-box">
