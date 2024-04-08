@@ -415,6 +415,7 @@ li {
 
 .about-me-container-box {
     display: flex;
+    margin-top: 50px;
 }
 
 
