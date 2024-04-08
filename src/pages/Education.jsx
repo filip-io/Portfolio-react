@@ -13,24 +13,23 @@ export default function Education() {
                         <h2 className="section-title">Education</h2>
                     </div>
                 </header>
-                {EducationData.education.map((edu, index) => (
-                    <div className="education-container-content" key={edu.title}>
+                {EducationData.education.map((edu) => (
+                    <div key={edu.id} className="education-container-content">
                         <div className="education-description">
                             <h2>{edu.title}</h2>
                             <p>{edu.institution}</p>
                             <h3>{edu.location}</h3>
-
                             <a className="education-btn" href={`#education-${edu.id}-modal`}>More info</a>
                             <div id={`education-${edu.id}-modal`} className="modal">
                                 <div className="modal-content">
-                                    <a href={`#${index}`} className="modal-close">&times;</a>
+                                    <a href={`#${edu.id}`} className="modal-close">&times;</a>
                                     <h2>{edu.modal.title}</h2>
                                     <h3>{edu.modal.institution}</h3>
                                     <h4>{edu.modal.years}</h4>
                                     <ul>
                                         <li>{edu.modal.description}</li>
-                                        {edu.modal.highlights.map((highlight, i) => (
-                                            <li key={i}>{highlight}</li>
+                                        {edu.modal.highlights.map((highlight) => (
+                                            <li key={edu.id}>{highlight}</li>
                                         ))}
                                     </ul>
                                 </div>

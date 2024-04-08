@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import ExperienceData from '../assets/experience.json'
 import siemensLogo from '../assets/siemens_logo.png'
 import inetLogo from '../assets/inet.jpg'
@@ -6,6 +7,7 @@ import internChinaLogo from '../assets/internchina.jpg'
 import candyKingLogo from '../assets/candyking.jpg'
 import lfvLogo from '../assets/lfv.jpg'
 
+// To return correct company logo according to 'imgSrc' property in experience.json 
 function getImageSrc(imgSrc) {
     switch (imgSrc) {
         case 'siemensLogo':
@@ -34,8 +36,8 @@ export default function Experience() {
                 </div>
             </header>
             <article className="experience-container">
-                {ExperienceData.experience.map((xp, index) => (
-                    <div key={index} className="experience-container-content">
+                {ExperienceData.experience.map((xp) => (
+                    <div key={xp.id} className="experience-container-content">
                         <div className="experience-description">
                             <h2>{xp.title}</h2>
                             <p>{xp.company}</p>
@@ -49,8 +51,8 @@ export default function Experience() {
                                     <h4>{xp.modal.years}</h4>
                                     <p>Areas of responsibility:</p>
                                     <ul className="experience-modal-list">
-                                        {xp.modal.responsibilities.map((responsibility, i) => (
-                                            <li key={i}>{responsibility}</li>
+                                        {xp.modal.responsibilities.map((responsibility) => (
+                                            <li key={xp.id}>{responsibility}</li>
                                         ))}
                                     </ul>
                                 </div>

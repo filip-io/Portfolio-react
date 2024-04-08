@@ -8,6 +8,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     const handleMagicWord = (event) => {
+      // prevTypedCharacters fetched automatically by React from current state of 'typedCharacters'
       setTypedCharacters((prevTypedCharacters) => prevTypedCharacters + event.key.toLowerCase());
     };
   
@@ -34,6 +35,7 @@ export const HomePage = () => {
   useEffect(() => {
     const modal = document.getElementById('dennis');
     const closeModal = (event) => {
+      // Hide modal if user clicks either on the modal content or on an element with the class 'modal-close'
       if (event.target === modal || event.target.classList.contains('modal-close')) {
         modal.style.display = 'none';
       }

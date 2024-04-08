@@ -19,9 +19,13 @@ export default function Projects() {
             if (!response.ok) {
                 throw new Error('Failed to fetch repositories');
             }
-            const data = await response.json();
-            setRepositories(data);
-            setErrorMessage('');
+            else 
+            {
+                const data = await response.json();
+                setRepositories(data);
+                setErrorMessage('');
+            }
+
         } catch (error) {
             console.error('Error fetching repositories:', error);
             setErrorMessage('Failed to load repositories. Please try again later.');
@@ -29,9 +33,11 @@ export default function Projects() {
         setLoading(false);
     };
 
+    // Exclude already rendered projects from the github repos to avoid duplicates
     const excludedRepoNames = ['AudialAtlasService', 'Mini_project-API', 'BankNyBank', 'Portfolio-react'];
-
     const filteredRepositories = repositories.filter(repo => !excludedRepoNames.includes(repo.name));
+
+    // Sort repos by date
     const sortedRepositories = filteredRepositories.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
     return (
@@ -43,8 +49,12 @@ export default function Projects() {
             </header>
             <article className="projects-container">
                 {ProjectsData.Projects.map((proj, index) => (
+                /*  Render each project on either left or right side accordin to it's index. 
+                    Accomplished by different CSS styling for each div*/
                     <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.title}>
                         <div className="projects-img-wrapper">
+                            {/* Conditionally render specific logo depending on property value of 'imgSrc' using short circuit operator '&&'
+                            Will only render if property value of 'imgSrc' match the value, equals 'true', otherwise it will skip the img component */}
                             {proj.imgSrc === 'audialAtlasLogo' && <img src={audialAtlasLogo} alt={`${proj.title} logo`} />}
                             {proj.imgSrc === 'apiLogo' && <img src={apiLogo} alt={`${proj.title} logo`} />}
                             {proj.imgSrc === 'bankLogo' && <img src={bankLogo} alt={`${proj.title} logo`} />}
