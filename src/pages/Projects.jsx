@@ -53,8 +53,8 @@ export default function Projects() {
                     Accomplished by different CSS styling for each div*/
                     <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.title}>
                         <div className="projects-img-wrapper">
-                            {/* Conditionally render specific logo depending on property value of 'imgSrc' using short circuit operator '&&'
-                            Will only render if property value of 'imgSrc' match the value, equals 'true', otherwise it will skip the img component */}
+                            {/* Conditionally render specific logo depending on property value of 'imgSrc' using short circuit behaviour of operator '&&'
+                            Will only render if property value of 'imgSrc' match (equals 'true'), otherwise will skip the img component and not render */}
                             {proj.imgSrc === 'audialAtlasLogo' && <img src={audialAtlasLogo} alt={`${proj.title} logo`} />}
                             {proj.imgSrc === 'apiLogo' && <img src={apiLogo} alt={`${proj.title} logo`} />}
                             {proj.imgSrc === 'bankLogo' && <img src={bankLogo} alt={`${proj.title} logo`} />}
