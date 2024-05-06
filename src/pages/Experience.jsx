@@ -42,7 +42,7 @@ export default function Experience() {
                             <h2>{xp.title}</h2>
                             <p>{xp.company}</p>
                             <h3>{xp.location}</h3>
-                            <a className="experience-btn" href={`#experience-${xp.id}-modal`}>More info</a>
+                            <a className="btn" href={`#experience-${xp.id}-modal`}>More info</a>
                             <div id={`experience-${xp.id}-modal`} className="modal">
                                 <div className="modal-content">
                                     <a href={`#${xp.id}`} className="modal-close">&times;</a>
@@ -51,8 +51,8 @@ export default function Experience() {
                                     <h4>{xp.modal.years}</h4>
                                     <p>Areas of responsibility:</p>
                                     <ul className="experience-modal-list">
-                                        {xp.modal.responsibilities.map((responsibility) => (
-                                            <li key={xp.id}>{responsibility}</li>
+                                        {xp.modal.responsibilities.map((responsibility, index) => (
+                                            <li key={`${xp.id}-${index}`}>{responsibility}</li>
                                         ))}
                                     </ul>
                                 </div>
@@ -63,8 +63,8 @@ export default function Experience() {
                         </div>
                     </div>
                 ))}
-            </article>
             <a className="btn" href="#">To top ↑</a>
+            </article>
         </main>
     );
 }

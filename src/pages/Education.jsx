@@ -19,7 +19,7 @@ export default function Education() {
                             <h2>{edu.title}</h2>
                             <p>{edu.institution}</p>
                             <h3>{edu.location}</h3>
-                            <a className="education-btn" href={`#education-${edu.id}-modal`}>More info</a>
+                            <a className="btn" href={`#education-${edu.id}-modal`}>More info</a>
                             <div id={`education-${edu.id}-modal`} className="modal">
                                 <div className="modal-content">
                                     <a href={`#${edu.id}`} className="modal-close">&times;</a>
@@ -28,8 +28,8 @@ export default function Education() {
                                     <h4>{edu.modal.years}</h4>
                                     <ul>
                                         <li>{edu.modal.description}</li>
-                                        {edu.modal.highlights.map((highlight) => (
-                                            <li key={edu.id}>{highlight}</li>
+                                        {edu.modal.highlights.map((highlight, index) => (
+                                            <li key={`${edu.id}-${index}`}>{highlight}</li>
                                         ))}
                                     </ul>
                                 </div>
@@ -43,8 +43,8 @@ export default function Education() {
                         </div>
                     </div>
                 ))}
+               <a className="btn" href="#">To top ↑</a>
             </article>
-            <a className="btn" href="#">To top ↑</a>
         </main>
     );
 }

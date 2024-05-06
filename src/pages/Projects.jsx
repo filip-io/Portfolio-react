@@ -51,7 +51,7 @@ export default function Projects() {
                 {ProjectsData.Projects.map((proj, index) => (
                 /*  Render each project on either left or right side accordin to it's index. 
                     Accomplished by different CSS styling for each div*/
-                    <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.title}>
+                    <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.id}>
                         <div className="projects-img-wrapper">
                             {/* Conditionally render specific logo depending on property value of 'imgSrc' using short circuit behaviour of operator '&&'
                             Will only render if property value of 'imgSrc' match (equals 'true'), otherwise will skip the img component and not render */}
@@ -68,9 +68,10 @@ export default function Projects() {
                                 <div className="modal-content">
                                     <a href={`#${index}`} className="modal-close">&times;</a>
                                     <h2>{proj["modal-title"]}</h2>
-                                    {proj["modal-description"].map((desc, i) => (
-                                        <p key={i}>{desc}</p>
+                                    {proj["modal-description"].map((desc, index) => (
+                                    <p key={`${proj.id}-${index}`}>{desc}</p>
                                     ))}
+
                                     {proj.url && (
                                         <p>Go to site: <a href={proj.url} target="_blank" rel="noopener noreferrer">{proj.urlText}</a></p>
                                     )}
@@ -103,8 +104,8 @@ export default function Projects() {
                         </div>
                     </div>
                 ))}
-            </article>
             <a className="btn" href="#">To top ↑</a>
+            </article>
         </main>
     );
 }
