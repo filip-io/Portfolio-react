@@ -1,4 +1,7 @@
 import filipAboutPic from '../assets/filip-about.jpg'
+import techStack from '../assets/tech.json'
+
+const techs = Object.keys(techStack);
 
 export default function AboutMe() {
     return (
@@ -14,15 +17,35 @@ export default function AboutMe() {
                         <p>Hello there! My name is Filip and I am a full-stack .NET student, passionate about technology
                             and design. Every day I am eagerly gaining new knowledge and insights
                             in this fast and versatile world of software development.</p>
-                        <p>I am advancing from a successful career in Supply Chain Management, most recently at Siemens. 
+                        <p>I am advancing from a successful career in Supply Chain Management, most recently at Siemens.
                             Currently I am in my first year of a comprehensive .NET training program at Chas Academy in Stockholm.</p>
-                        <p>Now I am looking forward to channel my creativity through crafting functional, beautiful and high performance 
+                        <p>Now I am looking forward to channel my creativity through crafting functional, beautiful and high performance
                             software for engaging experiences.</p>
                         <p>When I manage to escape my computer's grasp, I enjoy working out, HIFI, photography, and
                             exploring nature.</p>
                     </div>
                 </div>
+
+                <article>
+                    <h1 className="tech-intro">Technologies I have worked with</h1>
+                    {techs.map(tech => (
+                        <div key={tech} className="tech-category-container">
+                            <h2>{tech}</h2>
+                            <div className="tech-container">
+                                {techStack[tech].map((item) => (
+                                    <div key={item.id} className="tech-item-container">
+                                        <div className="tech-icon-container">
+                                            <i className={item.icon} aria-label={item.alt}></i>
+                                            <span className="tech-label">{item.label}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </article>
             </article>
+            <a className="btn" href="#">To top ↑</a>
         </main>
     );
 }

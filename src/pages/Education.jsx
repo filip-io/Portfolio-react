@@ -1,4 +1,4 @@
-import EducationData from '../assets/education.json'
+import educationData from '../assets/education.json'
 import chasLogo from '../assets/chas.jpg'
 import sihLogo from '../assets/sih.png'
 import dalarnaLogo from '../assets/dalarna.jpg'
@@ -13,7 +13,7 @@ export default function Education() {
                         <h2 className="section-title">Education</h2>
                     </div>
                 </header>
-                {EducationData.education.map((edu) => (
+                {educationData.education.map((edu) => (
                     <div key={edu.id} className="education-container-content">
                         <div className="education-description">
                             <h2>{edu.title}</h2>

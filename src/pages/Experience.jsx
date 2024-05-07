@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import ExperienceData from '../assets/experience.json'
+import experienceData from '../assets/experience.json'
 import siemensLogo from '../assets/siemens_logo.png'
 import inetLogo from '../assets/inet.jpg'
 import boschSiemensLogo from '../assets/boschsiemens.jpg'
@@ -36,7 +36,7 @@ export default function Experience() {
                 </div>
             </header>
             <article className="experience-container">
-                {ExperienceData.experience.map((xp) => (
+                {experienceData.experience.map((xp) => (
                     <div key={xp.id} className="experience-container-content">
                         <div className="experience-description">
                             <h2>{xp.title}</h2>

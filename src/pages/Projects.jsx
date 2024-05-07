@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import ProjectsData from '../assets/projects.json'
+import projectsData from '../assets/projects.json'
 import audialAtlasLogo from '../assets/audial_atlas_logo.jpg'
 import apiLogo from '../assets/api.jpg'
 import bankLogo from '../assets/bank.jfif'
@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
             </header>
             <article className="projects-container">
-                {ProjectsData.Projects.map((proj, index) => (
+                {projectsData.Projects.map((proj, index) => (
                 /*  Render each project on either left or right side accordin to it's index. 
                     Accomplished by different CSS styling for each div*/
                     <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.id}>
@@ -61,7 +61,7 @@ export default function Projects() {
                             {proj.imgSrc === 'siemensLogo' && <img src={siemensLogo} alt={`${proj.title} logo`} />}
                         </div>
                         <div className="project-description">
-                            <h3>{proj.title}</h3>
+                            <h2>{proj.title}</h2>
                             <p>{proj.description}</p>
                             <a className="btn" href={`#project-${proj.id}-modal`}>More info</a>
                             <div id={`project-${proj.id}-modal`} className="modal">
@@ -98,7 +98,7 @@ export default function Projects() {
                             <img src={gitHubLogo} alt="GitHub logo" />
                         </div>
                         <div className="project-description">
-                            <h3>{repo.name}</h3>
+                            <h2>{repo.name}</h2>
                             <p>{repo.description}</p>
                             <a className="btn" href={repo.html_url} target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </div>
