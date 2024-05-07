@@ -45,7 +45,6 @@ export default function AboutMe() {
                     ))}
                 </article>
             </article>
-            <a className="btn" href="#">To top ↑</a>
         </main>
     );
 }

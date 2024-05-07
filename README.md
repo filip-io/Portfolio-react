@@ -2,7 +2,7 @@
 
 ## Intro 
 
-Refactorization of my portfolio site using React Vite v10.5.0
+Refactorization of my portfolio site using React Vite
 
 
 ### 🐣 Easteregg clues 🐇

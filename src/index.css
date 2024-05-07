@@ -417,8 +417,8 @@ li {
 
 .tech-intro {
   text-align: center;
-  margin-top: 80px;
-  padding: 10px;
+  margin-top: 65px;
+  padding: 30px;
 }
 
 .tech-category-container {
@@ -426,7 +426,8 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .tech-category-container h2 {
@@ -478,6 +479,7 @@ li {
   padding: 5px 10px;
   border-radius: 5px;
   text-align: center;
+  z-index: 1;
 }
 
 .tech-icon-container:hover .tech-label {
