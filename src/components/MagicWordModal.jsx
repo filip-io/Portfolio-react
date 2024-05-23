@@ -18,6 +18,19 @@ function MagicWordModal({ isOpen, onClose }) {
             onClose();
         }
     };
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Escape' || event.keyCode === 27) {
+            onClose();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose]);
     
     if (!isOpen) return null;
 
