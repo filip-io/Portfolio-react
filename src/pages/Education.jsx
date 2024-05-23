@@ -1,11 +1,23 @@
-import educationData from '../assets/education.json'
-import chasLogo from '../assets/chas.jpg'
-import sihLogo from '../assets/sih.png'
-import dalarnaLogo from '../assets/dalarna.jpg'
-import suLogo from '../assets/su.jpg'
-import ScrollToTopButton from '../components/ScrollToTopButton'
+import { useState } from 'react';
+import educationData from '../assets/education.json';
+import chasLogo from '../assets/chas.jpg';
+import sihLogo from '../assets/sih.png';
+import dalarnaLogo from '../assets/dalarna.jpg';
+import suLogo from '../assets/su.jpg';
+import ScrollToTopButton from '../components/ScrollToTopButton';
+import EducationModal from '../components/EducationModal'
 
 export default function Education() {
+    const [openModal, setOpenModal] = useState(null);
+
+    const openEducationModal = (id) => {
+        setOpenModal(id);
+    };
+
+    const closeEducationModal = () => {
+        setOpenModal(null);
+    };
+
     return (
         <main>
             <article className="education-container">
@@ -20,21 +32,16 @@ export default function Education() {
                             <h2>{edu.title}</h2>
                             <p>{edu.institution}</p>
                             <h3>{edu.location}</h3>
-                            <a className="btn" href={`#education-${edu.id}-modal`}>More info</a>
-                            <div id={`education-${edu.id}-modal`} className="modal">
-                                <div className="modal-content">
-                                    <a href={`#${edu.id}`} className="modal-close">&times;</a>
-                                    <h2>{edu.modal.title}</h2>
-                                    <h3>{edu.modal.institution}</h3>
-                                    <h4>{edu.modal.years}</h4>
-                                    <ul>
-                                        <li>{edu.modal.description}</li>
-                                        {edu.modal.highlights.map((highlight, index) => (
-                                            <li key={`${edu.id}-${index}`}>{highlight}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
+                            <button className="btn" onClick={() => openEducationModal(edu.id)}>More info</button>
+                            <EducationModal
+                                isOpen={openModal === edu.id}
+                                onClose={closeEducationModal}
+                                title={edu.modal.title}
+                                institution={edu.modal.institution}
+                                years={edu.modal.years}
+                                description={edu.modal.description}
+                                highlights={edu.modal.highlights}
+                            />
                         </div>
                         <div className="education-img-wrapper">
                             {edu.imgSrc === 'chasLogo' && <img src={chasLogo} alt={`${edu.institution} logo`} />}

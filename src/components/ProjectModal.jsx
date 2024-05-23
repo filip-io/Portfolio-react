@@ -1,0 +1,45 @@
+import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+
+function Modal({ isOpen, onClose, title, content, url, urlText, componentUrl }) {
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
+
+    const handleClickOutside = (event) => {
+        if (event.target.className === 'modal') {
+            onClose();
+        }
+    };
+
+    if (!isOpen) return null;
+
+    return (
+        <div className="modal" onClick={handleClickOutside}>
+            <div className="modal-content">
+                <div className="modal-close-container">
+                    <button className="modal-close" onClick={onClose}>&times;</button>
+                </div>
+                <h2>{title}</h2>
+                {content.map((desc, index) => (
+                    <p key={index}>{desc}</p>
+                ))}
+                {url && (
+                    <p>Go to site: <a href={url} target="_blank" rel="noopener noreferrer">{urlText}</a></p>
+                )}
+                {componentUrl && (
+                    <p><NavLink to={componentUrl}>Show gallery</NavLink></p>
+                )}
+            </div>
+        </div>
+    );
+}
+
+export default Modal;

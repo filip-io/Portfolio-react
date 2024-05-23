@@ -1,17 +1,18 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import projectsData from '../assets/projects.json'
 import audialAtlasLogo from '../assets/audial_atlas_logo.jpg'
 import apiLogo from '../assets/api.jpg'
 import bankLogo from '../assets/bank.jfif'
 import siemensLogo from '../assets/siemens.jpg'
 import gitHubLogo from '../assets/git.jpg'
+import Modal from '../components/ProjectModal'
 import ScrollToTopButton from '../components/ScrollToTopButton';
 
 export default function Projects() {
     const [loading, setLoading] = useState(false);
     const [repositories, setRepositories] = useState([]);
     const [errorMessage, setErrorMessage] = useState('');
+    const [openModal, setOpenModal] = useState(null);
 
     const fetchRepositories = async () => {
         setLoading(true);
@@ -22,12 +23,9 @@ export default function Projects() {
                 if (!response.ok) {
                     throw new Error('Failed to fetch repositories');
                 }
-                else {
-                    const data = await response.json();
-                    setRepositories(data);
-                    setErrorMessage('');
-                }
-
+                const data = await response.json();
+                setRepositories(data);
+                setErrorMessage('');
             } catch (error) {
                 console.error('Error fetching repositories:', error);
                 setErrorMessage('Failed to load repositories. Please try again later.');
@@ -36,12 +34,32 @@ export default function Projects() {
         }, 2000);
     };
 
-    // Exclude already rendered projects from the github repos to avoid duplicates
     const excludedRepoNames = ['AudialAtlasService', 'Mini_project-API', 'BankNyBank', 'Portfolio-react'];
     const filteredRepositories = repositories.filter(repo => !excludedRepoNames.includes(repo.name));
-
-    // Sort repos by date
     const sortedRepositories = filteredRepositories.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+    const openProjectModal = (id) => {
+        setOpenModal(id);
+    };
+
+    const closeProjectModal = () => {
+        setOpenModal(null);
+    };
+
+    const renderProjectImage = (imgSrc) => {
+        switch (imgSrc) {
+            case 'audialAtlasLogo':
+                return <img src={audialAtlasLogo} alt="Audial Atlas logo" />;
+            case 'apiLogo':
+                return <img src={apiLogo} alt="API logo" />;
+            case 'bankLogo':
+                return <img src={bankLogo} alt="Bank logo" />;
+            case 'siemensLogo':
+                return <img src={siemensLogo} alt="Siemens logo" />;
+            default:
+                return null;
+        }
+    };
 
     return (
         <main>
@@ -52,37 +70,23 @@ export default function Projects() {
             </header>
             <article className="projects-container">
                 {projectsData.Projects.map((proj, index) => (
-                    /*  Render each project on either left or right side accordin to it's index. 
-                        Accomplished by different CSS styling for each div*/
                     <div className={`project-container-${index % 2 === 0 ? 'left' : 'right'}`} key={proj.id}>
                         <div className="projects-img-wrapper">
-                            {/* Conditionally render specific logo depending on property value of 'imgSrc' using short circuit behaviour of operator '&&'
-                            Will only render if property value of 'imgSrc' match (equals 'true'), otherwise will skip the img component and not render */}
-                            {proj.imgSrc === 'audialAtlasLogo' && <img src={audialAtlasLogo} alt={`${proj.title} logo`} />}
-                            {proj.imgSrc === 'apiLogo' && <img src={apiLogo} alt={`${proj.title} logo`} />}
-                            {proj.imgSrc === 'bankLogo' && <img src={bankLogo} alt={`${proj.title} logo`} />}
-                            {proj.imgSrc === 'siemensLogo' && <img src={siemensLogo} alt={`${proj.title} logo`} />}
+                            {renderProjectImage(proj.imgSrc)}
                         </div>
                         <div className="project-description">
                             <h2>{proj.title}</h2>
                             <p>{proj.description}</p>
-                            <a className="btn" href={`#project-${proj.id}-modal`}>More info</a>
-                            <div id={`project-${proj.id}-modal`} className="modal">
-                                <div className="modal-content">
-                                    <a href={`#${index}`} className="modal-close">&times;</a>
-                                    <h2>{proj["modal-title"]}</h2>
-                                    {proj["modal-description"].map((desc, index) => (
-                                        <p key={`${proj.id}-${index}`}>{desc}</p>
-                                    ))}
-
-                                    {proj.url && (
-                                        <p>Go to site: <a href={proj.url} target="_blank" rel="noopener noreferrer">{proj.urlText}</a></p>
-                                    )}
-                                    {proj.componentUrl && (
-                                        <p><NavLink to={proj.componentUrl}>Show gallery</NavLink></p>
-                                    )}
-                                </div>
-                            </div>
+                            <button className="btn" onClick={() => openProjectModal(proj.id)}>More info</button>
+                            <Modal
+                                isOpen={openModal === proj.id}
+                                onClose={closeProjectModal}
+                                title={proj["modal-title"]}
+                                content={proj["modal-description"]}
+                                url={proj.url}
+                                urlText={proj.urlText}
+                                componentUrl={proj.componentUrl}
+                            />
                         </div>
                     </div>
                 ))}

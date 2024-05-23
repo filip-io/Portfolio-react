@@ -64,6 +64,7 @@ h2 {
     text-decoration: none;
     transition: background-color 0.8s, text-shadow 0.8s ease;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -1175,7 +1176,6 @@ li {
 /* Modal base */
 
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1191,8 +1191,8 @@ li {
   background-color: rgba(11, 11, 37, 0.79);
   width: 320px;
   text-align: left;
-  margin-top: 15px;
   padding: 35px;
+  padding-top: 20px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1210,15 +1210,20 @@ h4 {
   margin-top: 15px;
 }
 
-:target {
+/* :target {
   display: block;
-}
+} */
 
 .modal-close {
+  display: flex;
   text-decoration: none;
-  float: right;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 35px;
+  right: 35px;
   color: #f0f0f3;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: bold;
   margin: -20px -10px;
 }

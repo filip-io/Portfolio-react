@@ -1,65 +1,47 @@
-import { useEffect, useState } from 'react'
-import filipPic from '../assets/filip.jpg'
-import dennisPic from '../assets/dennis.gif'
+import { useEffect, useState } from 'react';
+import MagicWordModal from '../components/MagicWordModal';
+import filipPic from '../assets/filip.jpg';
 
 export const HomePage = () => {
   const [typedCharacters, setTypedCharacters] = useState('');
   const magicKeyword = 'neo';
+  const [showModal, setShowModal] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState('rgb(12, 11, 37)');
 
   useEffect(() => {
     const handleMagicWord = (event) => {
-      // prevTypedCharacters fetched automatically by React from current state of 'typedCharacters'
       setTypedCharacters((prevTypedCharacters) => prevTypedCharacters + event.key.toLowerCase());
     };
   
     const checkMagicWord = () => {
-      if (typedCharacters === magicKeyword) {
-        const modal = document.getElementById('dennis');
-        modal.style.display = 'block';
+      if (typedCharacters.toLowerCase() === magicKeyword) {
+        setShowModal(true);
         setTypedCharacters('');
       } else if (!magicKeyword.startsWith(typedCharacters)) {
         setTypedCharacters('');
       }
     };
-  
+
     document.addEventListener('keydown', handleMagicWord);
-  
+
     checkMagicWord();
-  
+
     return () => {
       document.removeEventListener('keydown', handleMagicWord);
     };
   }, [typedCharacters]);
-  
 
-  useEffect(() => {
-    const modal = document.getElementById('dennis');
-    const closeModal = (event) => {
-      // Hide modal if user clicks either on the modal content or on an element with the class 'modal-close'
-      if (event.target === modal || event.target.classList.contains('modal-close')) {
-        modal.style.display = 'none';
-      }
-    };
-
-    modal.addEventListener('click', closeModal);
-    
-    return () => {
-      modal.removeEventListener('click', closeModal);
-    };
-  }, []);
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   const toggleBackground = () => {
-    const body = document.querySelector('.page-container');
-    if (body.style.backgroundColor === 'rgb(12, 11, 37)') {
-      body.style.backgroundColor = 'black';
-    } else {
-      body.style.backgroundColor = 'rgb(12, 11, 37)';
-    }
+    setBackgroundColor((prevColor) => (prevColor === 'rgb(12, 11, 37)' ? 'black' : 'rgb(12, 11, 37)'));
   };
 
   return (
     <>
-      <main className="home-main-container">
+      <main className="home-main-container" style={{ backgroundColor }}>
         <div className="home-main-title-container">
           <div className="home-main-container-left-box">
             <h1>Hi, I'm Filip Nilsson</h1>
@@ -90,13 +72,8 @@ export const HomePage = () => {
             </div>
           </div>
         </article>
+        <MagicWordModal isOpen={showModal} onClose={closeModal} />
       </main>
-      <div id="dennis" className="modal">
-        <div className="modal-content">
-          <a href="#" className="modal-close">&times;</a>
-          <img src={dennisPic} alt="Dennis saying 'Ah ah ah, you didn't say the magic word'" />
-        </div>
-      </div>
     </>
   );
 };

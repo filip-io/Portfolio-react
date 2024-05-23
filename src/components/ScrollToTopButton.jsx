@@ -1,4 +1,3 @@
-import React from 'react';
 
 const ScrollToTopButton = ({ className }) => {
     const handleClick = (e) => {

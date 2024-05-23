@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 import fnLogo from '../assets/fnlogo.jpg'
+import HamMenu from '../components/HamMenu';
 
 export const Layout = () => {
     const [isChecked, setIsChecked] = useState(false);
@@ -26,11 +27,7 @@ export const Layout = () => {
                         <li><NavLink to="/contact" onClick={handleMenuItemClick}>Contact</NavLink></li>
                     </ul>
                 </nav>
-                <div className="ham-menu">
-                    <label htmlFor="nav-toggle">
-                        <i className="fa-solid fa-bars"></i>
-                    </label>
-                </div>
+                <HamMenu />
             </header>
             <Outlet />
             <footer className="footer-container">
