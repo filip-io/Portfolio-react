@@ -1027,20 +1027,30 @@ li {
 
 /* Contact */
 
+.contact-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
   width: 400px;
-  margin-top: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contact-title {
   display: flex;
-  margin-bottom: 25px;
+  margin: 25px 0px 25px;
   font-size: 26px;
+  padding: 0px 50px;
 }
 
 .contact-sub-title {
@@ -1153,7 +1163,8 @@ li {
 
 @media (max-width: 960px) {
   .contact-container {
-    margin-top: 50px;
+    margin-top: 35px;
+    margin-bottom: 25px;
     max-width: 100vw;
   }
 

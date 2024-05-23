@@ -6,7 +6,7 @@ export const HomePage = () => {
   const [typedCharacters, setTypedCharacters] = useState('');
   const magicKeyword = 'neo';
   const [showModal, setShowModal] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState('rgb(12, 11, 37)');
+  const [backgroundColor, setBackgroundColor] = useState('');
 
   useEffect(() => {
     const handleMagicWord = (event) => {
@@ -36,11 +36,10 @@ export const HomePage = () => {
   };
 
   const toggleBackground = () => {
-    setBackgroundColor((prevColor) => (prevColor === 'rgb(12, 11, 37)' ? 'black' : 'rgb(12, 11, 37)'));
+    setBackgroundColor((prevColor) => (prevColor === '' ? 'black' : ''));
   };
 
   return (
-    <>
       <main className="home-main-container" style={{ backgroundColor }}>
         <div className="home-main-title-container">
           <div className="home-main-container-left-box">
@@ -74,6 +73,5 @@ export const HomePage = () => {
         </article>
         <MagicWordModal isOpen={showModal} onClose={closeModal} />
       </main>
-    </>
   );
 };
