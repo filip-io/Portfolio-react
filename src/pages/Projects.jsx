@@ -6,6 +6,7 @@ import apiLogo from '../assets/api.jpg'
 import bankLogo from '../assets/bank.jfif'
 import siemensLogo from '../assets/siemens.jpg'
 import gitHubLogo from '../assets/git.jpg'
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 export default function Projects() {
     const [loading, setLoading] = useState(false);
@@ -106,7 +107,7 @@ export default function Projects() {
                         </div>
                     </div>
                 ))}
-                <a className="btn" href="#">To top ↑</a>
+                <ScrollToTopButton className="btn" />
             </article>
         </main>
     );

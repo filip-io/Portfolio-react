@@ -6,6 +6,7 @@ import boschSiemensLogo from '../assets/boschsiemens.jpg'
 import internChinaLogo from '../assets/internchina.jpg'
 import candyKingLogo from '../assets/candyking.jpg'
 import lfvLogo from '../assets/lfv.jpg'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 // To return correct company logo according to 'imgSrc' property in experience.json 
 function getImageSrc(imgSrc) {
@@ -63,7 +64,7 @@ export default function Experience() {
                         </div>
                     </div>
                 ))}
-            <a className="btn" href="#">To top ↑</a>
+                <ScrollToTopButton className="btn" />
             </article>
         </main>
     );

@@ -3,6 +3,7 @@ import chasLogo from '../assets/chas.jpg'
 import sihLogo from '../assets/sih.png'
 import dalarnaLogo from '../assets/dalarna.jpg'
 import suLogo from '../assets/su.jpg'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 export default function Education() {
     return (
@@ -43,7 +44,7 @@ export default function Education() {
                         </div>
                     </div>
                 ))}
-               <a className="btn" href="#">To top ↑</a>
+                <ScrollToTopButton className="btn" />
             </article>
         </main>
     );
