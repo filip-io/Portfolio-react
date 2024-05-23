@@ -12,7 +12,6 @@ const HamMenu = () => {
       <label htmlFor="nav-toggle">
         <i className="fa-solid fa-bars" onClick={handleToggle} />
       </label>
-      <input type="checkbox" id="nav-toggle" checked={isChecked} onChange={handleToggle} />
     </div>
   );
 };

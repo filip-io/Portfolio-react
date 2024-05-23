@@ -17,7 +17,7 @@ export const Layout = () => {
                     <img src={fnLogo} alt="Filip Nilsson logo" className="fn-logo" />
                 </NavLink>
                 <nav>
-                    <input type="checkbox" id="nav-toggle" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
+                <input type="checkbox" id="nav-toggle" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
                     <ul className="menu">
                         <li><NavLink to="/" onClick={handleMenuItemClick}>Home</NavLink></li>
                         <li><NavLink to="/aboutme" onClick={handleMenuItemClick}>About me</NavLink></li>
