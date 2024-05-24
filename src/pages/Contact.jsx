@@ -21,10 +21,10 @@ export default function Contact() {
                     <input type="hidden" name="access_key" value="74deb914-d2c4-4ab1-8e53-c24001f9ffd1" />
 
                     <label htmlFor="name" className="contact-sr-only">Your Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" className="contact-inputs" required />
+                    <input type="text" id="name" name="name" placeholder="Your Name" autoComplete="name" className="contact-inputs" required />
 
                     <label htmlFor="email" className="contact-sr-only">Your Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" className="contact-inputs" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" autoComplete="email" className="contact-inputs" required />
 
                     <label htmlFor="message" className="contact-sr-only">Your Message:</label>
                     <textarea id="message" name="message" placeholder="Your Message" className="contact-inputs-textfield" required></textarea>
