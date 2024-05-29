@@ -1,6 +1,20 @@
 {
     "Projects": [
         {
+            "id": "0",
+            "title": "Fantasy Chass",
+            "description": "AI-powered roleplaying game inspired by Dungeons and Dragons",
+            "modal-title": "Fantasy Chass Game",
+            "modal-description": [
+                "In this ongoing dynamic project, my team are collaborating with several other teams to create an innovative and engaging product. Fantasy Chass is a roleplaying game powered by AI, offering unique scenarios tailored by an AI game master.",
+                "Technology Stack: The backend, developed by our team, uses .NET with Identity for secure and efficient user authentication. ChatGPT and DALL-E are integrated for dynamic storytelling and stunning visuals.",
+                "Engaging Frontend: The frontend team are using React and Vite to ensure a modern, fast, and interactive interface. UX designers are crafting intuitive interfaces, and the DevOps team facilitates smooth deployment and maintenance."
+            ],
+            "imgSrc": "fantasyChassLogo",
+            "url": "https://github.com/filip-io/FantasyChas-Backend.git",
+            "urlText": "Fantasy Chass"
+        },
+        {
             "id": "1",
             "title": "Audial Atlas",
             "description": "Music API with restful architecture",

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import projectsData from '../assets/projects.json'
+import fantasyChassLogo from '../assets/fantasychass.jpg'
 import audialAtlasLogo from '../assets/audial_atlas_logo.jpg'
 import apiLogo from '../assets/api.jpg'
 import bankLogo from '../assets/bank.jfif'
@@ -7,6 +8,15 @@ import siemensLogo from '../assets/siemens.jpg'
 import gitHubLogo from '../assets/git.jpg'
 import Modal from '../components/ProjectModal'
 import ScrollToTopButton from '../components/ScrollToTopButton';
+
+const imageMap = {
+    fantasyChassLogo,
+    audialAtlasLogo,
+    apiLogo,
+    bankLogo,
+    siemensLogo,
+    gitHubLogo
+};
 
 export default function Projects() {
     const [loading, setLoading] = useState(false);
@@ -47,18 +57,7 @@ export default function Projects() {
     };
 
     const renderProjectImage = (imgSrc) => {
-        switch (imgSrc) {
-            case 'audialAtlasLogo':
-                return <img src={audialAtlasLogo} alt="Audial Atlas logo" />;
-            case 'apiLogo':
-                return <img src={apiLogo} alt="API logo" />;
-            case 'bankLogo':
-                return <img src={bankLogo} alt="Bank logo" />;
-            case 'siemensLogo':
-                return <img src={siemensLogo} alt="Siemens logo" />;
-            default:
-                return null;
-        }
+        return imageMap[imgSrc] ? <img src={imageMap[imgSrc]} alt={`${imgSrc} logo`} /> : null;
     };
 
     return (

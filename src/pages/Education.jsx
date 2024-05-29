@@ -5,7 +5,14 @@ import sihLogo from '../assets/sih.png';
 import dalarnaLogo from '../assets/dalarna.jpg';
 import suLogo from '../assets/su.jpg';
 import ScrollToTopButton from '../components/ScrollToTopButton';
-import EducationModal from '../components/EducationModal'
+import EducationModal from '../components/EducationModal';
+
+const imageMap = {
+    chasLogo,
+    sihLogo,
+    dalarnaLogo,
+    suLogo
+};
 
 export default function Education() {
     const [openModal, setOpenModal] = useState(null);
@@ -16,6 +23,10 @@ export default function Education() {
 
     const closeEducationModal = () => {
         setOpenModal(null);
+    };
+
+    const renderEducationImage = (imgSrc) => {
+        return imageMap[imgSrc] ? <img src={imageMap[imgSrc]} alt={`${imgSrc} logo`} /> : null;
     };
 
     return (
@@ -44,10 +55,7 @@ export default function Education() {
                             />
                         </div>
                         <div className="education-img-wrapper">
-                            {edu.imgSrc === 'chasLogo' && <img src={chasLogo} alt={`${edu.institution} logo`} />}
-                            {edu.imgSrc === 'sihLogo' && <img src={sihLogo} alt={`${edu.institution} logo`} />}
-                            {edu.imgSrc === 'dalarnaLogo' && <img src={dalarnaLogo} alt={`${edu.institution} logo`} />}
-                            {edu.imgSrc === 'suLogo' && <img src={suLogo} alt={`${edu.institution} logo`} />}
+                            {renderEducationImage(edu.imgSrc)}
                         </div>
                     </div>
                 ))}

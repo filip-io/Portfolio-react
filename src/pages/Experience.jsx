@@ -9,25 +9,14 @@ import lfvLogo from '../assets/lfv.jpg';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import ExperienceModal from '../components/ExperienceModal';
 
-// To return correct company logo according to 'imgSrc' property in experience.json 
-function getImageSrc(imgSrc) {
-    switch (imgSrc) {
-        case 'siemensLogo':
-            return siemensLogo;
-        case 'inetLogo':
-            return inetLogo;
-        case 'boschSiemensLogo':
-            return boschSiemensLogo;
-        case 'internChinaLogo':
-            return internChinaLogo;
-        case 'candyKingLogo':
-            return candyKingLogo;
-        case 'lfvLogo':
-            return lfvLogo;
-        default:
-            return '';
-    }
-}
+const imageMap = {
+    siemensLogo,
+    inetLogo,
+    boschSiemensLogo,
+    internChinaLogo,
+    candyKingLogo,
+    lfvLogo
+};
 
 export default function Experience() {
     const [openModal, setOpenModal] = useState(null);
@@ -38,6 +27,10 @@ export default function Experience() {
 
     const closeExperienceModal = () => {
         setOpenModal(null);
+    };
+
+    const renderExperienceImage = (imgSrc) => {
+        return imageMap[imgSrc] ? <img src={imageMap[imgSrc]} alt={`${imgSrc} logo`} /> : null;
     };
 
     return (
@@ -65,7 +58,7 @@ export default function Experience() {
                             />
                         </div>
                         <div className="experience-img-wrapper">
-                            <img src={getImageSrc(xp.imgSrc)} alt={`${xp.company} logo`} />
+                            {renderExperienceImage(xp.imgSrc)}
                         </div>
                     </div>
                 ))}
