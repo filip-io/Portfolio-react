@@ -60,6 +60,7 @@ h2 {
     border: 1px solid orange;
     background-color: #0C0B25;
     color: yellow;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.8s, text-shadow 0.8s ease;
