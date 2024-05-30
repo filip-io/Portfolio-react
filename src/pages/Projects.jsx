@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import projectsData from '../assets/projects.json'
 import fantasyChassLogo from '../assets/fantasychass.jpg'
+import portfolioReact from '../assets/fnlogobig.jpg'
 import audialAtlasLogo from '../assets/audial_atlas_logo.jpg'
 import apiLogo from '../assets/api.jpg'
 import bankLogo from '../assets/bank.jfif'
@@ -11,6 +12,7 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const imageMap = {
     fantasyChassLogo,
+    portfolioReact,
     audialAtlasLogo,
     apiLogo,
     bankLogo,
