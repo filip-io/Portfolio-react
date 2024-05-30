@@ -22,7 +22,7 @@
             "modal-description": [
                 "In this project I learned how to build my own portfolio (the very site you are visiting right now) using React Vite which provided a fast and efficient development environment.",
                 "I utilized React to build the user interface components and Vite for bundling and serving the application during development.",
-                "The project showcases the integration of state management, routing, and other essential features for a complete web application."
+                "The project showcases the integration of state management, routing and responsive design."
             ],
             "imgSrc": "portfolioReact",
             "url": "https://github.com/filip-io/Portfolio-react",
