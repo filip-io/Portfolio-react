@@ -45,7 +45,7 @@ function Modal({ isOpen, onClose, title, content, url, urlText, componentUrl }) 
                     <p key={index}>{desc}</p>
                 ))}
                 {url && (
-                    <p>Go to site: <a href={url} target="_blank" rel="noopener noreferrer">{urlText}</a></p>
+                    <p>View on GitHub: <a href={url} target="_blank" rel="noopener noreferrer">{urlText}</a></p>
                 )}
                 {componentUrl && (
                     <p><NavLink to={componentUrl}>Show gallery</NavLink></p>

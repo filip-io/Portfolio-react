@@ -6,9 +6,9 @@
             "description": "AI-powered roleplaying game",
             "modal-title": "Fantasy Chass Game",
             "modal-description": [
-                "In this ongoing dynamic project, my team are collaborating with several other teams to create an innovative and engaging product. Fantasy Chass is a roleplaying game powered by AI, offering unique scenarios tailored by an AI game master.",
-                "Technology Stack: The backend, developed by our team, uses .NET with Identity for secure and efficient user authentication. ChatGPT and DALL-E are integrated for dynamic storytelling and stunning visuals.",
-                "Engaging Frontend: The frontend team are using React and Vite to ensure a modern, fast, and interactive interface. UX designers are crafting intuitive interfaces, and the DevOps team facilitates smooth deployment and maintenance."
+                "In this project I collaborated with several other teams to create an innovative and engaging product. Fantasy Chass is a roleplaying game powered by AI, offering unique scenarios tailored by an AI game master.",
+                "The backend was developed by my team, which uses .NET with Identity for secure and efficient user authentication. ChatGPT and DALL-E are integrated for dynamic storytelling and stunning visuals.",
+                "The frontend team used React and Vite to ensure a modern, fast, and interactive interface. UX designers crafted interfaces and the DevOps team facilitated smooth deployment and maintenance."
             ],
             "imgSrc": "fantasyChassLogo",
             "url": "https://github.com/filip-io/FantasyChas-Backend.git",
@@ -61,7 +61,7 @@
             "description": "Console application",
             "modal-title": "BankNyBank (BankNewBank)",
             "modal-description": [
-                "BankNyBank (BankNewBank) is a console app built in C# that emulates a simple bank-app/ATM.",
+                "BankNyBank (BankNewBank) is a console app built with C# that emulates a simple bank-app/ATM.",
                 "The program was a school group project."
             ],
             "imgSrc": "bankLogo",
