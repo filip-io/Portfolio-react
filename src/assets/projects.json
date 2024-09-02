@@ -4,7 +4,7 @@
             "id": "0",
             "title": "Reliable Reservations",
             "description": "API for managing a restaurant",
-            "modal-title": "Reliable Reservations API",
+            "modal-title": "Reliable Reservations",
             "modal-description": [
                 "A backend system designed to streamline restaurant management operations.",
                 "I built the system using a layered architecture with controllers, services, and repositories, leveraging dependency injection to enhance modularity, testability, and scalability.",
