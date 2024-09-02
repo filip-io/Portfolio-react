@@ -26,15 +26,15 @@
         },
         {
             "id": "5",
-            "icon": "devicon-nodejs-plain",
-            "alt": "NodeJS-icon",
-            "label": "Node.js"
-        },
-        {
-            "id": "6",
             "icon": "devicon-vitejs-plain",
             "alt": "ViteJS-icon",
             "label": "Vite"
+        },
+        {
+            "id": "6",
+            "icon": "devicon-nodejs-plain",
+            "alt": "NodeJS-icon",
+            "label": "Node.js"
         },
         {
             "id": "7",

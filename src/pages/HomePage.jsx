@@ -58,7 +58,7 @@ export const HomePage = () => {
             <div className="h4-container">
               <div>
                 <i className="fa-solid fa-keyboard fa-2xl"></i>
-                <h4>Web Developer <br />(to be)</h4>
+                <h4>Web Developer</h4>
               </div>
               <div>
                 <i className="fa-solid fa-face-grin-beam fa-2xl"></i>

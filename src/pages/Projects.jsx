@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import projectsData from '../assets/projects.json'
+import reliableReservationsLogo from '../assets/apisystem_logo.jpg'
 import fantasyChassLogo from '../assets/fantasychass.jpg'
 import portfolioReact from '../assets/fnlogobig.jpg'
 import audialAtlasLogo from '../assets/audial_atlas_logo.jpg'
@@ -11,6 +12,7 @@ import Modal from '../components/ProjectModal'
 import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const imageMap = {
+    reliableReservationsLogo,
     fantasyChassLogo,
     portfolioReact,
     audialAtlasLogo,
