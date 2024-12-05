@@ -18,7 +18,7 @@ export default function AboutMe() {
                             and design. Every day I am eagerly gaining new knowledge and insights
                             in this fast and versatile world of software development.</p>
                         <p>I am advancing from a successful career in Supply Chain Management, most recently at Siemens.
-                            Currently I am in my first year of a comprehensive .NET training program at Chas Academy in Stockholm.</p>
+                            Currently I am in my final year of a comprehensive .NET training program at Chas Academy in Stockholm.</p>
                         <p>Now I am looking forward to channel my creativity through crafting functional, beautiful and high performance
                             software for engaging experiences.</p>
                         <p>When I manage to escape my computer's grasp, I enjoy working out, HIFI, photography, and
