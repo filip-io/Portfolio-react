@@ -2,6 +2,29 @@
   "experience": [
     {
       "id": "1",
+      "title": "Full-stack .NET Developer - Intern",
+      "company": "DevCore AB",
+      "location": "Stockholm",
+      "modal": {
+        "title": "Full-stack .NET Developer - Intern",
+        "company": "DevCore AB",
+        "years": "2024-2025",
+        "responsibilities": [
+          "Leveraged several Microsoft technologies to develop solutions for customer needs",
+          "Microsoft .NET",
+          "React (TypeScript)",
+          "Power Platform:",
+          "Dynamics 365",
+          "Power Automate",
+          "Power Apps",
+          "Dataverse",
+          "Azure"
+        ]
+      },
+      "imgSrc": "devcoreLogo"
+    },
+    {
+      "id": "2",
       "title": "Tactical Purchaser",
       "company": "Siemens AB - SCM Nordics",
       "location": "Stockholm",
@@ -24,7 +47,7 @@
       "imgSrc": "siemensLogo"
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "Sales Support",
       "company": "Siemens AB - Digital Industries",
       "location": "Stockholm",
@@ -42,7 +65,7 @@
       "imgSrc": "siemensLogo"
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "Sales Assistant",
       "company": "Siemens AB - Digital Industries",
       "location": "Stockholm",
@@ -60,7 +83,7 @@
       "imgSrc": "siemensLogo"
     },
     {
-      "id": "4",
+      "id": "5",
       "title": "Purchasing assistant",
       "company": "Inet AB - SCM",
       "location": "Gothenburg",
@@ -78,7 +101,7 @@
       "imgSrc": "inetLogo"
     },
     {
-      "id": "5",
+      "id": "6",
       "title": "Internship",
       "company": "Inet AB - SCM",
       "location": "Gothenburg",
@@ -95,7 +118,7 @@
       "imgSrc": "inetLogo"
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "Internship",
       "company": "B/S/H/ AB - Planning and Distribution",
       "location": "Solna",
@@ -112,7 +135,7 @@
       "imgSrc": "boschSiemensLogo"
     },
     {
-      "id": "7",
+      "id": "8",
       "title": "Internship",
       "company": "InternChina",
       "location": "Qingdao, China",
@@ -132,7 +155,7 @@
       "imgSrc": "internChinaLogo"
     },
     {
-      "id": "8",
+      "id": "9",
       "title": "Service Consultant",
       "company": "Candy King",
       "location": "Stockholm",
@@ -148,7 +171,7 @@
       "imgSrc": "candyKingLogo"
     },
     {
-      "id": "9",
+      "id": "10",
       "title": "Airport Attendant",
       "company": "Civil Aviation Administration",
       "location": "Stockholm Arlanda Airport",

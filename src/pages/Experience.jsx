@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import experienceData from '../assets/experience.json';
+import devcoreLogo from '../assets/devcore.jpg'
 import siemensLogo from '../assets/siemens_logo.png';
 import inetLogo from '../assets/inet.jpg';
 import boschSiemensLogo from '../assets/boschsiemens.jpg';
@@ -10,6 +11,7 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 import ExperienceModal from '../components/ExperienceModal';
 
 const imageMap = {
+    devcoreLogo,
     siemensLogo,
     inetLogo,
     boschSiemensLogo,
