@@ -1,90 +1,90 @@
 {
-    "Frontend": [
-        {
-            "id": "1",
-            "icon": "devicon-html5-plain",
-            "alt": "HTML-icon",
-            "label": "HTML"
-        },
-        {
-            "id": "2",
-            "icon": "devicon-css3-plain",
-            "alt": "CSS-icon",
-            "label": "CSS"
-        },
-        {
-            "id": "3",
-            "icon": "devicon-javascript-plain",
-            "alt": "JavaScript-icon",
-            "label": "JavaScript"
-        },
-        {
-            "id": "4",
-            "icon": "devicon-react-original",
-            "alt": "React-icon",
-            "label": "React"
-        },
-        {
-            "id": "5",
-            "icon": "devicon-vitejs-plain",
-            "alt": "ViteJS-icon",
-            "label": "Vite"
-        },
-        {
-            "id": "6",
-            "icon": "devicon-nodejs-plain",
-            "alt": "NodeJS-icon",
-            "label": "Node.js"
-        },
-        {
-            "id": "7",
-            "icon": "devicon-figma-plain",
-            "alt": "Figma-icon",
-            "label": "Figma"
-        }
-    ],
-    "Backend": [
-        {
-            "id": "1",
-            "icon": "devicon-csharp-plain",
-            "alt": "Csharp-icon",
-            "label": "C#"
-        },
-        {
-            "id": "2",
-            "icon": "devicon-dot-net-plain-wordmark",
-            "alt": "Dotnet-icon",
-            "label": ".NET"
-        },
-        {
-            "id": "3",
-            "icon": "devicon-microsoftsqlserver-plain",
-            "alt": "MicrosoftSqlServer-icon",
-            "label": "SQL Server"
-        },
-        {
-            "id": "4",
-            "icon": "devicon-azure-plain",
-            "alt": "Azure-icon",
-            "label": "Azure"
-        },
-        {
-            "id": "5",
-            "icon": "devicon-git-plain",
-            "alt": "git-icon",
-            "label": "Git"
-        },
-        {
-            "id": "6",
-            "icon": "devicon-insomnia-plain",
-            "alt": "insomnia-icon",
-            "label": "Insomnia"
-        },
-        {
-            "id": "7",
-            "icon": "devicon-swagger-plain",
-            "alt": "swagger-icon",
-            "label": "Swagger"
-        }
-    ]
+  "Frontend": [
+    {
+      "id": "1",
+      "icon": "devicon-html5-plain",
+      "alt": "HTML-icon",
+      "label": "HTML"
+    },
+    {
+      "id": "2",
+      "icon": "devicon-css3-plain",
+      "alt": "CSS-icon",
+      "label": "CSS"
+    },
+    {
+      "id": "3",
+      "icon": "devicon-javascript-plain",
+      "alt": "JavaScript-icon",
+      "label": "JavaScript"
+    },
+    {
+      "id": "4",
+      "icon": "devicon-typescript-plain",
+      "alt": "TypeScript-icon",
+      "label": "TypeScript"
+    },
+    {
+      "id": "5",
+      "icon": "devicon-react-original",
+      "alt": "React-icon",
+      "label": "React"
+    },
+    {
+      "id": "6",
+      "icon": "devicon-vitejs-plain",
+      "alt": "ViteJS-icon",
+      "label": "Vite"
+    },
+    {
+      "id": "7",
+      "icon": "devicon-figma-plain",
+      "alt": "Figma-icon",
+      "label": "Figma"
+    }
+  ],
+  "Backend": [
+    {
+      "id": "1",
+      "icon": "devicon-csharp-plain",
+      "alt": "Csharp-icon",
+      "label": "C#"
+    },
+    {
+      "id": "2",
+      "icon": "devicon-dot-net-plain-wordmark",
+      "alt": "Dotnet-icon",
+      "label": ".NET"
+    },
+    {
+      "id": "3",
+      "icon": "devicon-microsoftsqlserver-plain",
+      "alt": "MicrosoftSqlServer-icon",
+      "label": "SQL Server"
+    },
+    {
+      "id": "4",
+      "icon": "devicon-azure-plain",
+      "alt": "Azure-icon",
+      "label": "Azure"
+    },
+    {
+      "id": "5",
+      "icon": "devicon-azuredevops-plain",
+      "alt": "AzureDevOps-icon",
+      "label": "Azure DevOps"
+    },
+    {
+      "id": "6",
+      "icon": "devicon-git-plain",
+      "alt": "git-icon",
+      "label": "Git"
+    },
+    {
+      "id": "7",
+      "icon": "devicon-swagger-plain",
+      "alt": "swagger-icon",
+      "label": "Swagger"
+    }
+  ]
 }

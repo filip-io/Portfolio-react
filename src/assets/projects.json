@@ -2,6 +2,20 @@
     "Projects": [
         {
             "id": "0",
+            "title": "ProductSync",
+            "description": "Scalable Data Integration with Azure",
+            "modal-title": "ProductSync",
+            "modal-description": [
+                "A serverless Azure solution that automates product data transfer from Excel to Microsoft Dataverse (the backend for Dynamics 365).",
+                "The project addressed challenges related to integrating asynchronous, event-driven workflows into enterprise environments, with an emphasis on scalability, maintainability, and usability for sales operations.",
+                "Demonstrates how serverless Azure components can transform legacy data flows into resilient, cost-effective workflows — with potential applications across enterprise systems."
+            ],
+            "imgSrc": "productSyncLogo",
+            "url": "https://www.linkedin.com/in/filip-nilsson-37a61a51/details/projects/",
+            "urlText": "ProductSync project"
+        },
+        {
+            "id": "1",
             "title": "Reliable Reservations",
             "description": "API for managing a restaurant",
             "modal-title": "Reliable Reservations",
@@ -15,7 +29,7 @@
             "urlText": "Reliable Reservations API"
         },
         {
-            "id": "1",
+            "id": "2",
             "title": "Fantasy Chass",
             "description": "AI-powered roleplaying game",
             "modal-title": "Fantasy Chass Game",
@@ -29,7 +43,7 @@
             "urlText": "Fantasy Chass"
         },
         {
-            "id": "2",
+            "id": "3",
             "title": "Portfolio site",
             "description": "Personal website",
             "modal-title": "Portfolio site",
@@ -43,7 +57,7 @@
             "urlText": "React Vite project"
         },
         {
-            "id": "3",
+            "id": "4",
             "title": "Audial Atlas",
             "description": "Music API with restful architecture",
             "modal-title": "Audial Atlas music API",
@@ -57,7 +71,7 @@
             "urlText": "AudialAtlasService"
         },
         {
-            "id": "4",
+            "id": "5",
             "title": "Interests API",
             "description": "Minimal API with restful architecture",
             "modal-title": "Interests API",
@@ -70,7 +84,7 @@
             "urlText": "Interests API"
         },
         {
-            "id": "5",
+            "id": "6",
             "title": "BankNyBank",
             "description": "Console application",
             "modal-title": "BankNyBank (BankNewBank)",
@@ -83,7 +97,7 @@
             "urlText": "BankNyBank"
         },
         {
-            "id": "6",
+            "id": "7",
             "title": "Siemens SCM Nordics",
             "description": "Layout and structure of new site",
             "modal-title": "Siemens SCM Nordics",

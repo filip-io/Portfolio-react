@@ -44,8 +44,9 @@ function Modal({ isOpen, onClose, title, content, url, urlText, componentUrl }) 
                 {content.map((desc, index) => (
                     <p key={index}>{desc}</p>
                 ))}
+                <br />
                 {url && (
-                    <p>View on GitHub: <a href={url} target="_blank" rel="noopener noreferrer">{urlText}</a></p>
+                    <a href={url} target="_blank" rel="noopener noreferrer">{urlText}</a>
                 )}
                 {componentUrl && (
                     <p><NavLink to={componentUrl}>Show gallery</NavLink></p>

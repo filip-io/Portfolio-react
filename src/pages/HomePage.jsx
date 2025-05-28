@@ -44,7 +44,7 @@ export const HomePage = () => {
         <div className="home-main-title-container">
           <div className="home-main-container-left-box">
             <h1>Hi, I'm Filip Nilsson</h1>
-            <h2>Full-Stack .NET Student</h2>
+            <h2>Full-stack .NET Developer</h2>
           </div>
           <div className="home-main-container-right-box">
             <img src={filipPic} alt="Picture of Filip" id="filip" className="filip-home-pic" onClick={toggleBackground} />
