@@ -14,7 +14,7 @@ export default function Contact() {
 
                 <div className="contact-icons-container">
                     <a href="https://github.com/filip-io" target="_blank" rel="noopener noreferrer" className="contact-icons-container-icon" aria-label="GitHub"><i className="fa-brands fa-github fa-2xl"></i></a>
-                    <a href="https://linkedin.com/in/filip-nilsson-37a61a51" target="_blank" rel="noopener noreferrer" className="contact-icons-container-icon" aria-label="LinkedIn"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="http://www.linkedin.com/in/filipnilsson-link" target="_blank" rel="noopener noreferrer" className="contact-icons-container-icon" aria-label="LinkedIn"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
                 </div>
 
                 <form action="https://api.web3forms.com/submit" method="POST" className="contact-input-container">

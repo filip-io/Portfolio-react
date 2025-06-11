@@ -37,7 +37,7 @@ export const Layout = () => {
                 <div className="footer-list">
                     <ul>
                         <li><a href="https://github.com/filip-io" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/filip-nilsson-37a61a51" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                        <li><a href="http://www.linkedin.com/in/filipnilsson-link" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
                     </ul>
                 </div>
             </footer>
