@@ -49,7 +49,9 @@ export const HomePage = () => {
         <div className="home-main-container-right-box">
           <img src={filipPic} alt="Picture of Filip" id="filip" className="filip-home-pic" onClick={toggleBackground} />
         </div>
-        <h3>Check out the new headless version of my portfolio by <a href="https://filip-io.github.io/" target="_blank" rel="noopener noreferrer">clicking here</a></h3>
+        <article className="home-intro-container">
+          <h3>Check out the new headless version of my portfolio <a href="https://filip-io.github.io/" target="_blank" rel="noopener noreferrer">here</a></h3>
+        </article>
       </div>
 
       <article className="home-intro-container">
