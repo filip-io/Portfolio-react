@@ -50,7 +50,7 @@
             }, 2000);
         };
 
-        const excludedRepoNames = ['Reliable-Reservations', 'FantasyChas-Backend', 'AudialAtlasService', 'Mini_project-API', 'BankNyBank', 'Portfolio-react', 'git-test', 'git'];
+        const excludedRepoNames = ['filip-io.github.io', 'Reliable-Reservations', 'FantasyChas-Backend', 'AudialAtlasService', 'Mini_project-API', 'BankNyBank', 'Portfolio-react', 'git-test', 'git'];
         const filteredRepositories = repositories.filter(repo => !excludedRepoNames.includes(repo.name));
         const sortedRepositories = filteredRepositories.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 

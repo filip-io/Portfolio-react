@@ -14,6 +14,7 @@
 
 body,
 html {
+  overflow-y: scroll;
   color: rgb(207, 207, 207);
   background-color: #09091e;
   scroll-behavior: smooth;
@@ -51,21 +52,21 @@ h2 {
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    padding: 10px 20px;
-    margin: 20px auto 20px;
-    border: 1px solid orange;
-    background-color: #0C0B25;
-    color: yellow;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.8s, text-shadow 0.8s ease;
-    cursor: pointer;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 10px 20px;
+  margin: 20px auto 20px;
+  border: 1px solid orange;
+  background-color: #0c0b25;
+  color: yellow;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.8s, text-shadow 0.8s ease;
+  cursor: pointer;
+  text-align: center;
 }
 
 .btn:hover {
@@ -349,6 +350,7 @@ li {
     align-self: flex-start;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: rgba(27, 35, 60, 0.397);
     width: 100%;
     height: auto;
@@ -391,7 +393,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-left: 200px;
 }
 
@@ -412,8 +414,8 @@ li {
 }
 
 .filip-about-pic {
-  border-radius: 50%;
-  width: 200px;
+  border-radius: 5%;
+  width: 325px;
   margin-right: 50px;
 }
 
@@ -464,7 +466,7 @@ li {
 }
 
 .tech-item-container {
-  position: relative; 
+  position: relative;
 }
 
 .tech-icon-container:hover .tech-label {
@@ -472,7 +474,7 @@ li {
 }
 
 .tech-label {
-  display: none; 
+  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -515,7 +517,7 @@ li {
   }
 
   .filip-about-pic {
-    border-radius: 50%;
+    border-radius: 5%;
     margin: auto;
   }
 
@@ -525,6 +527,12 @@ li {
     padding: 25px;
     margin: auto;
     max-width: 350px;
+  }
+
+  .tech-intro {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
   }
 }
 
@@ -636,7 +644,6 @@ li {
   max-width: 100%;
 }
 
-
 .spinner {
   border: 7px solid #101b5a;
   border-top: 7px solid #f6cd00;
@@ -647,8 +654,12 @@ li {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 960px) {

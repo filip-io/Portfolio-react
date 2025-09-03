@@ -1,5 +1,5 @@
-import filipAboutPic from '../assets/filip-about.jpg'
-import techStack from '../assets/tech.json'
+import filipAboutPic from '../assets/filip-about.jpg';
+import techStack from '../assets/tech.json';
 
 const techs = Object.keys(techStack);
 
